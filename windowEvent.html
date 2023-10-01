@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window events</title>
+</head>
+<body>
+    <button id="button" onclick="openwindow()">Open window</button>
+    <button id="button" onclick="closewindow()">close window</button>
+   <div id="box"></div>
+   <script>
+    let windows;
+    function openwindow(){
+    windows= window.open("js.html","",'width=200px,height=200px,left=200px,top=200px');   
+    }
+    function closewindow(){
+windows.close();
+    }
+   </script> 
+</body>
+</html>

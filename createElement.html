@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creteElement</title>
+</head>
+<body>
+    <div id="newDi">llease</div>
+        <div id="newdiv">
+            start
+            <div id="divider">newdiv</div>
+            end
+        </div>
+   <script>
+    let start=document.querySelector('body');
+   let add= start.innerHTML=`<table style='cellspacing="5";cellpadding="5"'> 
+            <tr>
+                <th>name3</th>
+                <th>name2</th>
+                <th>name1</th>
+                <tr>
+                    <tr>
+                        <td>agwsdhu</td>
+                        <td>arvind</td>
+                        <td>arvind</td>
+                        </tr>
+            </table>` ;
+            add.appendChild(add);
+            start.innerHTML=start.innerHTML+`<table style='cellspacing="5";cellpadding="5"'> 
+            <tr>
+                <th>name3</th>
+                <th>name2</th>
+                <th>name1</th>
+                <tr>
+                    <tr>
+                        <td>agwsdhu</td>
+                        <td>arvind</td>
+                        <td>arvind</td>
+                        </tr>
+            </table>`
+//     let a=document.querySelectorAll('div')[0];
+//     for(let i=0;i<=5;i++){
+//     a.innerHTML=a.innerHTML+`<a href="addEventListner.html">Arvind</a><br>`;
+//     }
+//
+    //onworking
+  //      let inpu=document.querySelectorAll('div')[1];
+    //    inpu.innerHTML=inpu.innerHTML+`<input type="search">this is input tag`;
+        //
+//
+//
+//
+//
+        //
+        // let inpu=document.querySelectorAll('div')[1];
+        // let c=document.getElementById("divider");
+        // let t=document.createElement('table');
+        // t.innerHTML=`<table style='cellspacing="5";cellpadding="5"'> 
+        //     <tr>
+        //         <th>name3</th>
+        //         <th>name2</th>
+        //         <th>name1</th>
+        //         <tr>
+        //             <tr>
+        //                 <td>agwsdhu</td>
+        //                 <td>arvind</td>
+        //                 <td>arvind</td>
+        //                 </tr>
+        //     </table>`; 
+        // c.append(t);
+        // t.style.cellsPacing="5";
+        // t.style.cellPadding="5";
+        // t.style.color="red";
+
+       // first child of the tag or element 
+        // let b=document.querySelectorAll('div')[2];
+        // let nextInput=document.createElement('input');
+        // nextInput.innerHTML=`<input type="search">this is input tag`; 
+        // b.prepend(nextInput);
+        //
+        //befor the elemet as <input><div id="divider"></div>
+        //
+        // let b=document.querySelectorAll('div')[2];
+        // let nextInput=document.createElement('input');
+        // nextInput.innerHTML=`<input type="search">this is input tag`; 
+        // b.before(nextInput);
+        //
+        //after the tag 
+        // let b=document.querySelectorAll('div')[2];
+        // let nextInput=document.createElement('input');
+        // nextInput.innerHTML=`<input type="search">this is input tag`; 
+        // b.after(nextInput);
+        //
+
+
+        //replce old tag to new tag
+        // let b=document.querySelectorAll('div')[2];
+        // let nextInput=document.createElement('input');
+        // nextInput.innerHTML=`<input type="search">this is input tag`; 
+        // b.replaceWith(nextInput);
+        // let b=document.getElementById("divider");
+        // let add=document.createElement('form');
+        // add.innerHTML="first form";
+        // b.append(add);
+   </script> 
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add event listner</title>
+    <style>
+*{
+    margin:0;
+    padding: 0;
+}
+boby{
+    margin: 0;
+    padding: 0;
+}
+#box{
+   
+    border-radius: 3px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #222;
+    margin: 20px;
+}
+#boxes{
+    
+    border-radius: 3px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #673131;
+    margin: 20px;
+}
+/* #box:hover{
+    background-color: rgb(221, 184, 21);
+    border-radius: 3px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #ad14d8;
+    margin: 20px;
+}
+#boxes:hover{
+    background-color: rgb(22, 182, 19);
+    border-radius: 3px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #f00707;
+    margin: 20px;
+} */
+center{
+    display: flex;
+}
+    </style>
+</head>
+<body>
+    <center>
+ <div id="box"></div>
+ <div id="boxes"></div> 
+    </center> 
+    <script>
+        let add=document.getElementsByTagName("div")[0];
+        add.innerHTML=add.innerHTML + '<div>hellow every one</div>';
+
+                let elem=first.getAttribute("id");
+console.log(elem);
+document.getElementById("box").onmouseover=change;
+function change(){
+    document.getElementById("box").style.background="black";
+}
+document.getElementById("box").onmouseout=change;
+function change(){
+    document.getElementById("box").style.background="yellow";
+}
+document.getElementById("box").addEventListener("mouseover",change);
+document.getElementById("box").addEventListener("mouseover",function (){
+   
+    this.style.background="black";
+
+});
+document.getElementById("boxes").addEventListener("click",function(){
+    this.style.background="red";
+});
+
+</script> 
+</body>
+</html>

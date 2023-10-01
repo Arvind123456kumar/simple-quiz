@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password toggle</title>
+    <style>
+        body{
+            background-color: rgb(145, 199, 199);
+        }
+            .input{
+width: 90%;
+background-color:white;
+max-width: 400px;
+border-radius: 5px;
+padding: 10px 10px;
+margin: 300px auto ;
+display: flex;
+align-items: center;
+
+            }
+            .fa-light-fa-eye-slash{
+               cursor: pointer;
+               width: 2%;
+               height: 2%;
+
+            }
+            input{
+                width: 100%;
+                border: 0;
+                outline: 0;
+                font-size: 24px;
+                color: hsl(0, 0%, 0%);
+padding: 10px 0;
+box-shadow: 2px solid green;
+            }
+    </style>
+</head>
+<body>
+    <div class="input">
+        <input type="password" id="password" placeholder="password">
+        <i id="eyeicon" class="fa-light-fa-eye-slash" onclick ='findIt()'>click</i>
+    </div>
+    <script>
+        let count=0
+        let eyeicon=document.getElementById("eyeicon").style.color="green";
+        let password=document.getElementById("password");
+       function findIt(){
+if(password.type == 'password'){
+
+    password.type='text';  
+}
+else{
+    password.type="password";
+}
+     
+}
+if(password.length<4){
+
+alert("PLEASE ENTER 4 TO 16 DIGITE PASSWORD");
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onload events</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0
+            ;
+        }
+            body{
+                font-family: tahoma;
+                font-size: 1.2em;
+            }
+            #wrapper{
+               margin: 50px auto 0px auto;
+               width: 80%; 
+        }
+        #button{
+            display: inline-block;
+            line-height: 60px;
+            padding: 0px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+            .black{
+            color: rgb(174, 59, 59);
+            background: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 1.2em;
+            }
+            .white{
+                color: rgb(26, 4, 4);
+                background-color: aliceblue;
+                font-family: cursive;
+                font-size: 1.2em;
+            }
+    </style>
+    <script>
+        window.onload=function (){
+        var body=document.getElementById("body");
+        let button=document.getElementById("button");
+        button.onclick=function(){
+            if(body.className == "black"){
+                body.className = "white";
+                button.className = "black";
+            }
+            else{
+                body.className="black";
+                button.className="white";
+            }
+        };
+    };
+    </script>
+</head>
+<body id="body">
+    <div id="wrapper">
+        <div id="button" class="black">click and change color</div>
+<div id="content">
+    <h1>Arvind Kumar</h1>
+<p>Lorem ipsum dolor,
+     sit amet consectetur
+      adipisicing elit. 
+      Reprehenderit aliquam 
+      soluta molestiae in nam
+       doloribus commodi eveniet
+        ad dolores dolorem, rerum 
+        explicabo voluptas sequi tenetur
+         voluptate, accusantium optio,
+          architecto velit?</p>
+          <p>Lorem ipsum dolor,
+            sit amet consectetur
+             adipisicing elit. 
+             Reprehenderit aliquam 
+             soluta molestiae in nam
+              doloribus commodi eveniet
+               ad dolores dolorem, rerum 
+               explicabo voluptas sequi tenetur
+                voluptate, accusantium optio,
+                 architecto velit?</p>
+</div>
+    </div>
+    <!-- <script>
+        var body=document.getElementById("body");
+        let button=document.getElementById("button");
+        function changeColor(){
+            if(body.className == "black"){
+                body.className = "white";
+                button.className = "black";
+            }
+            else{
+                body.className="black";
+                button.className="white";
+            }
+        };
+    </script> -->
+</body>
+</html>

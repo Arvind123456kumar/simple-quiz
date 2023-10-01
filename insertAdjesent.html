@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;;
+        }
+        .black{
+            color: black;
+            background-color: rgb(24, 23, 23);
+        }
+        .green{
+            color: green
+        }
+        .red1{
+            color: rgb(210, 144, 144);;
+        }
+        .black1{
+            color: rgb(33, 32, 32);
+            background-color: rgb(21, 19, 19);
+        }
+        .green1{
+            color: green
+        }
+    </style>
+</head>
+<body>
+    <div id="newDi">llease</div>
+        <div id="newdiv" class="red1 green1 black1">
+            start
+            <div id="divider">newdiv</div>
+            end
+        </div>
+   <script>
+
+    let addingTag=document.querySelector('body');
+        let element1=document.createElement('div');
+    element1.innerHTML=`<div id="devi">arvind</div>`; 
+    addingTag.insertAdjacentHTML('afterbegin',`<div id="devi">arvind</div>`);
+    let next=document.getElementById('devi');
+next.insertAdjacentHTML('beforeend',`<div id="ram">kumar</div>`);
+next.insertAdjacentHTML('beforebegin',`<h1>raj</h1>`);
+next.insertAdjacentHTML('afterend',`<h2>ram</h2>`);
+let newD=document.getElementById('ram');
+newD.innerHTML=newD.innerHTML+`<table>
+    <th>name</th>
+</table>`;
+// newD.replaceWith(next);
+// newD.remove();
+// newDivClass.className="red1  green1 black1";
+// newDivClass.classList.add("clrAdd");t=document.getElementById("devi");
+// let para=newDivClass.innerHTML=`<p class="red  black green">you can change using only js with class</p>`;
+// addElement.insertAdjacentHTML('beforeend',`<p class="red  black green">you can change using only js with class</p>`);
+// addElement.className="red black green";
+// let newDivClass=document.getElementById("newDiv");
+let time=setTimeout(function (){
+
+    // alert("setaTimeOut Function");
+    document.write("set time");
+},3000);
+
+time=setTimeout(function (){
+
+// alert("setaTimeOut Function");
+document.write("set time");
+},3000);
+document.write(time);
+</script>
+</body>
+</html>

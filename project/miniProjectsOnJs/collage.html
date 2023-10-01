@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collage</title><style>
+        *{
+            margin: 0;
+padding: 0;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            /* background-color: bisque; */
+        }
+#data{
+    /* margin:auto 4% auto 4%; */
+    display:flex;
+    color: black;
+    height: 35px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    justify-content: space-evenly;
+    background-color: aqua;
+
+align-items: center;
+list-style: none;
+}
+li{
+color: rgb(112, 111, 111);
+padding: 4px 6px 4px 6px;
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+li:hover{
+    padding: 4px 6px 4px 6px;
+    color: rgb(61, 60, 60);
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    background-color: rgb(194, 200, 200);
+    border-radius: 5px;
+    cursor: pointer;
+}
+#head{
+height: 50px;
+    background-color: aqua;
+    justify-content: center;
+ 
+       
+}
+#head:hover{
+height: 50px;
+    background-color: rgb(175, 234, 234);
+    justify-content: center;
+ 
+       
+}
+.search{
+    border-radius: 15px;
+    align-items: center;
+    margin-left: 35%;
+    width: 32%;
+    padding: 6px;
+    margin-top: 1.1%;
+    background-color: rgb(222, 242, 243);
+    border: none;
+}
+a{
+text-decoration: none;
+    color: rgb(53, 51, 51);
+    font-size: 15px;
+}
+button{
+    padding:4px ;
+    border-radius: 10px;
+    margin: auto auto auto 0;
+    width: 5%;
+    border: 0px;
+}
+.book{
+    color: rgb(112, 111, 111);
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+margin-top: 2%px;
+display: none;
+background-color: aliceblue;
+width: 100%;
+height: 300%;
+margin-left: 0px;
+}
+ </style>
+</head><body> <div> 
+    <ul id="data">
+ <i id="book" class="fa-solid fa-bars">
+    <div id="books" onclick="add()" >click
+    <p class="book">services</p>
+    <p class="book">books</p>
+    <p class="book">login</p>
+    </div></i>
+        <li>HOME</li>
+        <li>GALLARY</li>
+        <li>FACULTY </li>   
+        <li>COURSE</li>
+        <li>ABOUT</li>     
+        <li>CONTACT</li>
+        <a href=""><li>Log In</li></a> </ul>
+    <hr style="color: black;">
+    </div>
+    <div id=head>
+        <input class="search" type="search"  placeholder="search here">
+        <button >search</button>
+      </div>  
+      <i class="fa-solid fa-book"></i>
+      <script>
+        let book=document.querySelector('#books');
+        let book2=document.querySelectorAll('.book');
+        let data=document.getElementById('data');
+        let search=document.querySelector('.search');
+        add=()=>{          
+            Array.from(book2).forEach((el)=>{
+                el.style.display='block';
+            })
+          book.style.cursor='pointer';
+          reset();
+        }
+        reset=()=>{
+            setTimeout(()=>{
+                Array.from(book2).forEach((el)=>{
+                el.style.display='none';
+            })
+            },3000)
+        }
+       let searching=["https://www.google.com","facebook.com"];
+        search.addEventListener('input',function(){
+            let val=this.value;
+            for(let i=0;i<=searching.length;i++){
+                if(val==searching[i]){
+                    window.open(www.google.com)
+                    console.log(`https://www.google.com`)
+                }
+                else{
+                    console.log('you are wrong');
+                }
+            }
+        //     data.style.color='red'; 
+        //     let values=this.value;
+        //     if(values=='book'){
+
+        //         document.write("hello");
+        //     }
+        });
+      </script>
+</body>
+</html>

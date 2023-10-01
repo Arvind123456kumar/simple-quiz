@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get element by class name</title>
+    <style>
+#form{
+    /* background-image: url(lmlogo.jpg); */
+    color: rgb(21, 21, 22);
+    background-color: rgb(210, 241, 156);
+    font-weight: 600;
+    width: 50%;
+    border: 3px solid red ;
+    box-sizing: border-box;
+    box-shadow: inset 2px red;
+    text-align: center;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 30%;
+    border-radius: 10px;
+}
+input{
+width: 350px;
+
+font-size: 25px;
+font-weight: 500;
+font-family: sans-serif;
+border-radius: 10px;
+padding: 5px;
+}
+#login{
+    color: rgb(35, 245, 35);
+    background-color: rgb(114, 114, 113);
+    padding: 20px 20px 20px 20px;
+    box-sizing: content-box;
+   width: 50%;
+   font-size: 40px;
+   margin-left: 20%;
+   border-radius: 15px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#button{
+    background-color: blue;
+    color: wheat;
+    padding: 20px;
+    box-sizing: content-box;
+   width: 20%;
+   font-size: 20px;
+
+   border-radius: 10px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+margin: 10% auto 2% 7%;
+}
+#button:hover{
+    cursor: pointer;
+    background-color: rgb(211, 53, 4);
+    color: wheat;
+    padding: 20px;
+    box-sizing: content-box;
+   width: 20%;
+   font-size: 20px;
+
+   border-radius: 10px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+margin: 10% auto 2% 7%;
+}
+    </style>
+</head>
+<body>
+    <form id="form">
+        <p id="login">Login Form</p>
+        <div id="inter">
+          
+ <p class="name">Enter your first name</p>
+<input type="text" class="text" placeholder="enter first name" >
+<p class="name">Enter your last name</p>
+<input type="text" class="text1" placeholder="enter last name"></p>
+
+<p class="password">Enter your password</p>
+<input type="text" class="pass" placeholder="enter your password" required>    
+<p class="password">Confirm your password</p>
+<input type="text" class="pass1" placeholder="confirm password"required>
+<p class="email">enter your email</p>
+<input type="text" class="emailAccept" placeholder="enter your email" required>
+<p class="phone">enter your phone number</p>
+<input type="text" class="phoneAccept" placeholder="enter phne number">
+ </div>
+<button id="button">submit</button> 
+    </form>  
+    <script>
+document.getElementsByClassName("text");
+function handle(){
+   
+    alert("enter only first name");
+}
+document.getElementsByClassName("text1");
+function handle1(){
+    alert("enter only last name")
+}
+// let password=document.getElementsByClassName("pass");
+// function pass(){
+//    let passwords=this.value;
+//     alert("please enter 8 digit password");
+// }
+// let password1=document.getElementsByClassName("pass1");
+// function confirms(){
+//     let passwords1=this.value;
+//   if(passwords!==passwords1){
+//     alert("password  match")
+//   }  
+// }
+let password=document.getElementById('pass');
+let password1=document.getElementById('pass1');
+let p,p1;
+password.addEventListener('input',function(){
+     p=this.value;
+    if(p.length()!=8){
+        alert("please enter 8 digit password");
+    }
+});
+password1.addEventListener('input',function(){
+     p1=this.value;
+if(p!==p1){
+    alert("pasword not match");
+    
+}
+});
+    </script>
+</body>
+</html>

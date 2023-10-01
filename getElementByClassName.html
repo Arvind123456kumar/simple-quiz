@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementsByClassName</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        #header{
+            background-color: green;
+            color: white;
+            padding: 15px 0px 20px 40px;
+        }
+      h2 #haeder-title{
+padding: 10px 0px;
+
+        }
+        #content{
+            padding: 15px;
+        }
+        #content h4{
+            border-bottom: 2px solid green;
+            /* display: inline-block; */
+            width: 50%;
+            padding: 0px 20px 10px 15px;
+        }
+        .List-item{
+border-bottom: 2px solid gray;
+padding: 10px 0px;
+        }
+        form{
+            padding-top: 20px;
+        }
+        button{
+            padding: 5px;
+        }
+        input{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h2 id="header-title">Arvind</h2>
+        <p id="tagline">Computer education</p>
+    </header>
+    <div id="content">
+        <h4>Courses</h4>
+        <ul id="items">
+<li class="List-item">Computer</li>
+<li class="List-item">Math</li>
+<li class="List-item">Physics</li>
+<li class="List-item">Chemistry</li>
+            <li id="List-item"></li>
+        </ul>
+        <form>
+            <input type="text" >
+            <button>Submit</button>
+        </form>
+    </div>
+    <script>
+    // let getClass=document.getElementsByClassName('List-item');
+    // getClass[0].textContent='Home';
+    // console.log(getClass);
+    // getClass[2].style.color="red";
+    // getClass[1].innerHTML='raja';
+//
+//
+    //Query selector
+    // let headLine=document.querySelector('#input');
+    // headLine.style.color="black";
+    // headLine.value='enter your name';
+    // let clas=document.querySelector(`li:first-child`);
+    // // clas.textContent="arvind";
+    // let clas=document.querySelector(`li:nth-child(2)`);
+    // clas.textContent="arvind";
+    // let inputed=document.querySelector('input');
+    // inputed.value='enter your name';
+    // inputed.style.color="black";
+    // let button=document.querySelector('button');
+    // button.style.color="red";
+    //
+    //
+    //querySelecterAll
+    // let items=document.querySelectorAll(`li:nth-child(odd)`);
+    // for(let i in items){
+    // items[i].innerHTML="ram";
+    // items[i].style.color="red";
+    // }
+//   let items=document.querySelectorAll('li');
+//     for(let i in items){ 
+//     items[i].style.color="green";
+//     items[i].style.listStyle="none";
+    //
+    //
+    //create element with the help of js 
+    let newdiv=document.createElement('dive');
+    newdiv.className="box";
+    newdiv.id="boxId";
+    // create text
+    let textNewDiv=document.createTextNode('My name is Arvind')
+    // add text in div
+    newdiv.appendChild(textNewDiv);
+    //
+    let container=document.querySelector('#content');
+let form=document.querySelector("form");
+newdiv.style.color="red";
+container.insertBefore(newdiv,form);
+
+    </script>
+</body>
+</html>

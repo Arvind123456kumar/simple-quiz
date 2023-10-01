@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let createPromiss=new Promise((resolve,reject)=>{
+        console.log("ram");
+        setTimeout(()=>{
+            console.log("ram2");
+        },300)
+    })
+    let createPromiss2=new Promise((resolve,reject)=>{
+  
+        setTimeout(()=>{
+            console.log("ram2");
+        },300)
+    })
+    let createPromiss3=new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            console.log("ram2");
+        },300)
+    })
+    let array=[createPromiss,createPromiss2,createPromiss3];
+</script> 
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        nav{
+            display: flex;
+            background-color: aqua;
+        }
+        nav li{
+            list-style: none;
+            padding: 0 23px;
+        }
+
+    </style>
+</head>
+<body><nav>
+<li>Home</li>    
+<li>About</li>
+<li>Contact</li>
+</nav>
+</body>
+<!-- <script> -->
+    
+    <!-- // document.getElementsByTagName("nav")[0].style.background="red";
+    // document.getElementsByTagName("nav")[0].firstElementChild.style.color="green";
+    // document.getElementsByTagName("nav")[0].lastElementChild.style.color="green";
+    // Array.from(document.getElementsByTagName("li")).forEach(element=>{
+    //     element.style.background="white";
+    // }) -->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+    let user=prompt("enter S W G");
+    let rand1=Math.floor(Math.random());        
+let rand=["S","W","G"][rand1]
+const match=(rand, user)=>{
+if(rand===user){
+    return "Nobody ";
+}
+else if(rand==="S" && user==="W"){
+    return "snack";
+}
+else if(rand==="S" && user==="G")
+{
+return "gun";
+}
+else if(rand==="G" && user==="W"){
+    return "water";
+}
+else if(rand==="G" && user==="S"){
+    return "gun";
+}
+else if(rand==="W" && user==="G"){
+    return "water";
+}
+else if(rand==="W"&&user==="S"){
+    return "snack";
+}
+}
+let result=match(rand,user);
+document.write(`rand:${result} user:${result} \nthe winner is :${result}`);
+ </script>   
+</body>
+</html>
+</script>
+</html>

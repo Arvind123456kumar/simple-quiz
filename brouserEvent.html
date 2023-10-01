@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{height: 100%;
+            width: 100%;
+        }
+        .bulb{
+            height: 34px;
+            width: 34px;
+            background-color: rgb(104, 102, 196);
+        }
+        .bulb1{
+            height: 34px;
+            width: 34px;
+            background-color: rgb(221, 229, 113);
+        }
+    </style>
+</head>
+<body>
+    <button id="container">
+enter1
+    </button>
+    <button id="container1">
+        enter2
+            </button>
+            <h1>Next Button</h1>
+           <button id="google">google</button>
+<a href="google.com"><button>google</button></a>
+<a href="google.com"><button>google</button></a>
+            <a href="google.com"><button>google</button></a>
+            <h1>Glowing Bulb</h1>
+            <div id="bulb" class="bulb bulb1"></div>
+    <script>
+        setInterval(async function(){
+            document.querySelector("#bulb").classList.toggle("bulb1");
+        }, 300);
+//         // const prompt=require('prompt-sync')();
+//         let conf=prompt("enetr your choice");
+// let addEvents=document.getElementById("container");
+// let stoireIt=addEvents.addEventListener('click',function (){
+//     document.write("add your event");
+// });
+// let storeIt1=addEvents.addEventListener('mouseenter',function (){
+//     document.write("mouse enetr event");
+// });
+// if(conf===1){
+//    document.write("wrong");
+// }
+// else{
+//     addEvents.removeEventListener('mouseenter',storeIt1);
+// }
+//
+// let addEvents=document.getElementById("container");
+// addEvents.addEventListener('click',function (){
+//     alert("event1 ");
+
+// });
+// let addEvents1=document.getElementById('container1');
+// addEvents1.addEventListener('click',function(){
+//     alert("event2");
+//     addEvents1.style.background='red';
+// })
+// let goThere=document.getElementById("google");
+// goThere.addEventListener('cli`ck',function(){
+//     // let win=window.open(url,"","width=500,height=500,scrollbars=yes,resizable=yes");
+//     window.location="https//:google.com";
+//     win.focus();
+// light glowing
+   </script>
+</body>
+</html>
